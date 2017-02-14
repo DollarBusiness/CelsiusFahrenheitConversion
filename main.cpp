@@ -13,7 +13,9 @@ int main()
     cout << "Please select from the selection below:" << endl;
     cout << "1) Celsius to Fahrenheit" << endl;
     cout << "2) Fahrenheit to Celsius" << endl;
+    cout << "--> ";
     cin >> selection;
+    cout << "\n";
 
 
     if(selection == 1)
@@ -22,7 +24,7 @@ int main()
         cin >> celsius;
 
         //ALGORITHM
-        fahren = (9/5) * celsius + 32;
+        fahren = (9.0/5) * celsius + 32;
 
         //PRINT OUT INFO. GATHERED
         cout << "Fahrenheit is: " << fahren << endl;
@@ -33,14 +35,14 @@ int main()
         cin >> fahren;
 
         //ALGORITHM
-        celsius = (fahren - 32) * 5/9
+        celsius = (fahren - 32) * 5/9;
 
         //PRINT OUT INFO. GATHERED
         cout << "Celsius is: " << celsius << endl;
     }
     else
     {
-        cout << "Invalid input"
+        cout << "Invalid input" << endl;
     }
 
 
